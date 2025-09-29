@@ -1,6 +1,8 @@
-marked as fraud category:crypto in Unknown since 2025-08-01 over 10 limit 5
-marked as fraud category:crypto over 10 last 60 days in Unknown limit 5
-marked as fraud category:utilities over 10000 last 120 days in Kolkata limit 5
+Prompts:
+
+1. marked as fraud category:crypto in Unknown since 2025-08-01 over 10 limit 5
+2. marked as fraud category:crypto over 10 last 60 days in Unknown limit 5
+3. marked as fraud category:utilities over 10000 last 120 days in Kolkata limit 5
 
 sample prompt with curl command and the output from the LLM
 
