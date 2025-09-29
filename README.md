@@ -75,21 +75,30 @@ PGPASSWORD=postgres
 PGDATABASE=upi
 
 4. Install Dependencies
-# Agent
+# Agent Pipeline
 cd agent
 npm install
 
-# Server
-cd ../server
-npm install
-
-5. Start Services
 # Backend API
-cd server
-npm start
+cd ../server
+npm i
+npm run start
+> a2a-upi-server@1.0.0 start
+> node src/server.js
 
-# Agent pipeline
-cd ../agent
-npm start
+API listening on http://localhost:3000
+
+# Web Application
+cd ../agent/web
+npm i
+npm run dev
+
+Output:
+ VITE v5.4.19  ready in 107 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
 
 
