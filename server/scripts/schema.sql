@@ -41,5 +41,5 @@ CREATE TABLE IF NOT EXISTS agent_runs (
   risk_score NUMERIC(5,2) NOT NULL,
   flags JSONB NOT NULL
 );
-CREATE INDEX ON upi_transactions USING hnsw (embedding vector_cosine_ops);
+CREATE INDEX ON upi_transactions USING ybhnsw (embedding vector_cosine_ops);
 CREATE INDEX ON upi_transactions(txn_time ASC);
