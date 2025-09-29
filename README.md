@@ -1,4 +1,4 @@
-# A2A UPI Multi-Agent System (Node.js)
+# A2A(Agent 2 Agent) UPI Multi-Agent System (Node.js)
 
 This repository implements a **multi-agent orchestration pipeline** for analyzing UPI transactions in the BFSI domain.  
 It provides **fraud detection, risk scoring, and compliance validation** with modular agents, a backend API, and database support.
