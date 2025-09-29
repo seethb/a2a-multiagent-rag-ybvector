@@ -53,24 +53,43 @@ a2a-upi-multiagent-js/
 
 ## ⚙️ Setup & Installation
 
-### Prerequisites
+Prerequisites
 - Node.js v18+  
 - PostgreSQL or YugabyteDB  
 - npm or yarn  
 
-### 1. Clone the Repository
-```bash
+1. Clone the Repository
 git clone https://github.com/<your-org>/a2a-upi-multiagent-js.git
 cd a2a-upi-multiagent-js
 
-
-### 2. DB Setup
-```bash
-git clone https://github.com/<your-org>/a2a-upi-multiagent-js.git
-cd a2a-upi-multiagent-js
 2. Configure Database
+cd server/scripts
+psql -U <user> -d <database> -f schema.sql
 
+3. Configure Environment
+# Create .env in both agent/ and server/
+PGHOST=localhost
+PGPORT=5432
+PGUSER=postgres
+PGPASSWORD=postgres
+PGDATABASE=upi
 
-2. Configure Database
+4. Install Dependencies
+# Agent
+cd agent
+npm install
+
+# Server
+cd ../server
+npm install
+
+5. Start Services
+# Backend API
+cd server
+npm start
+
+# Agent pipeline
+cd ../agent
+npm start
 
 
