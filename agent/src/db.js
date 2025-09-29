@@ -3,11 +3,11 @@ import pg from 'pg';
 import 'dotenv/config';
 
 const pool = new pg.Pool({
-  host: process.env.PGHOST || '10.33.16.10',
-  port: Number(process.env.PGPORT || 5433),
-  user: process.env.PGUSER || 'yugabyte',
-  password: process.env.PGPASSWORD || 'yugabyte',
-  database: process.env.PGDATABASE || 'upi',
+  host: process.env.PGHOST,
+  port: Number(process.env.PGPORT),
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE,
   max: 10,
   idleTimeoutMillis: 30000
 });
