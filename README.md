@@ -73,11 +73,11 @@ Copy .env.example → .env in both agent/ and server/:
 
 4. Install dependencies
 
-# In agent
+In agent
 cd agent
 npm install
 
-# In server
+In server
 cd ../server
 npm install
 
