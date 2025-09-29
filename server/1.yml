@@ -1,0 +1,25 @@
+curl -ks --request POST --url https://yba-internal.demo.aws.apj.yugabyte.com/api/v1/customers/dc2b055a-2278-4fc0-a876-85fe7dcfb785/universes/27c0a741-7c03-4e31-91ec-c9be29921cb9/support_bundle  --header 'Accept: application/json' --header 'Content-Type: application/json' --header 'X-AUTH-YW-API-TOKEN: 4.054781e4-c5a7-42f3-953d-6a39afa04907.958dae0c-b5bc-49db-87a3-300b7c3fa741' --data '{
+        "components": [
+            "UniverseLogs"
+          ],
+         "endDate": "2025-08-27T16:07:18Z",
+          "filterPgAuditLogs": true,
+          "maxCoreFileSize": -9007199254740991,
+          "maxNumRecentCores": -2147483648,
+          "promDumpEndDate": "2025-08-27T13:07:18Z",
+         "promDumpStartDate": "2025-08-27T15:07:18Z",
+          "prometheusMetricsTypes": [
+           "MASTER_EXPORT"
+          ],
+          "startDate": "2025-08-27T13:07:18Z"
+    }'
+
+curl --request GET \
+  --url https://yba-internal.demo.aws.apj.yugabyte.com/api/v1/customers/dc2b055a-2278-4fc0-a876-85fe7dcfb785/tasks/59db2684-30ab-4379-a623-6bd8619f3efe \
+  --header 'Accept: application/json' \
+  --header 'X-AUTH-YW-API-TOKEN: 4.054781e4-c5a7-42f3-953d-6a39afa04907.958dae0c-b5bc-49db-87a3-300b7c3fa741'
+
+curl --request GET \
+  --url https://yba-internal.demo.aws.apj.yugabyte.com/api/v1/customers/dc2b055a-2278-4fc0-a876-85fe7dcfb785/universes/27c0a741-7c03-4e31-91ec-c9be29921cb9/support_bundle/c4adc42c-ca12-45ca-aaca-8a0973c643b3 \
+  --header 'Accept: application/json' \
+  --header 'X-AUTH-YW-API-TOKEN: 4.054781e4-c5a7-42f3-953d-6a39afa04907.958dae0c-b5bc-49db-87a3-300b7c3fa741'

@@ -1,0 +1,13 @@
+{
+  "name": "a2a-upi-agent",
+  "version": "1.0.0",
+  "main": "src/agent.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/agent_loop.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.5"
+  }
+}
