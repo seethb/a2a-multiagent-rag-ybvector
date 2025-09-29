@@ -68,11 +68,33 @@ psql -U <user> -d <database> -f schema.sql
 
 3. Configure Environment
 # Create .env in both agent/ and server/
-PGHOST=localhost
-PGPORT=5432
-PGUSER=postgres
-PGPASSWORD=postgres
-PGDATABASE=upi
+ A2A_SERVER_BASE=http://127.0.0.1:3000
+ AGENT_ID=agent-1
+ AGENT_ROLE=retriever  # or writer
+ PGHOST=10.33.16.10
+ PGPORT=5433
+ PGUSER=yugabyte
+ PGPASSWORD=xxxxxxx
+ PGDATABASE=upi
+ DATABASE_URL=postgres://yugabyte:xxxxxxxx@localhost:5433/upi
+ EMBED_DIM=1536
+ PORT=3000
+
+ CLAUDE_API_KEY=
+ ANTHROPIC_API_KEY=
+ CLAUDE_API_URL=https://api.anthropic.com/v1/messages
+ OPENAI_API_KEY=
+ 
+ ANTHROPIC_MODEL=claude-3-5-sonnet-20240620
+ ANTHROPIC_MAX_TOKENS=400
+ LLM_STEP_TIMEOUT_MS=6000
+ W_CRYPTO=15
+ W_LABELED_FRAUD=20
+ RISK_REVIEW=60
+ RISK_ESCALATE=80
+ FLAGS_REVIEW=3
+ FLAGS_ESCALATE=5
+
 
 4. Install Dependencies
 # Agent Pipeline
