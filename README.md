@@ -62,6 +62,15 @@ a2a-upi-multiagent-js/
 ```bash
 git clone https://github.com/<your-org>/a2a-upi-multiagent-js.git
 cd a2a-upi-multiagent-js
+
+
+### 2. DB Setup
+```bash
+git clone https://github.com/<your-org>/a2a-upi-multiagent-js.git
+cd a2a-upi-multiagent-js
 2. Configure Database
 
-### 2. DB Schema
+
+2. Configure Database
+
+
